@@ -1,0 +1,79 @@
+/* Markivox - Global App Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    min-height: 100vh;
+    background: #FFFFFF;
+}
+
+/* Gradient text utility */
+.gradient-text {
+    background: linear-gradient(135deg, #6A3DF0 0%, #D946EF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Page wrapper - accounts for fixed header */
+.page-wrapper {
+    padding-top: 64px;
+}
+
+/* Prose content styles for blog/service pages */
+.prose-markivox h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1F1F1F;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.prose-markivox h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1F1F1F;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose-markivox p {
+    font-family: 'DM Sans', sans-serif;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
+
+.prose-markivox ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.prose-markivox ul li {
+    font-family: 'DM Sans', sans-serif;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+.prose-markivox ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    background: #6A3DF0;
+    border-radius: 50%;
+}
